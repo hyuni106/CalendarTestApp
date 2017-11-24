@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
             public void onDayClick(EventDay eventDay) {
                 Calendar clickedDayCalendar = eventDay.getCalendar();
                 events.add(new EventDay(clickedDayCalendar, R.drawable.heart));
-                events.add(new EventDay(clickedDayCalendar, R.drawable.rating_star));
                 calendarView.setEvents(events);
             }
         });
